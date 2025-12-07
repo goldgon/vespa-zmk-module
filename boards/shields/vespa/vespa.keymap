@@ -4,6 +4,20 @@
 #include <dt-bindings/zmk/outputs.h>
 #include "keycode_japanese.h"
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000 // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 40    // default: 10
+
+&msc {
+    acceleration-exponent = <0>;      // 0
+    time-to-max-speed-ms = <0>;       // 300
+    delay-ms = <0>;                   // 0
+};
+
+&mmv {
+    time-to-max-speed-ms = <0>;
+    acceleration-exponent = <0>;
+    trigger-period-ms = <10>;
+    del
 
 &mt { 
     flavor = "balanced"; 
@@ -63,6 +77,8 @@
       bindings = <&boot_unlock 0 0>;
     };
   };
+
+
 
   keymap {
     compatible = "zmk,keymap";
