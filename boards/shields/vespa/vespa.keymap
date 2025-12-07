@@ -106,15 +106,58 @@
       >;
     };
 
-    second_layer {
+  2_second_layer {
       bindings = <
 &kp C_MUTE    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans   &trans   &trans   &bt BT_CLR  &bt BT_CLR_ALL
-&kp C_VOL_UP  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT     &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR    &kp UNDER
-&kp C_VOL_DN  &trans        &trans        &trans        &trans        &trans        &trans    &trans   &trans   &trans   &trans      &trans
-&trans        &trans        &trans        &trans        &trans        &trans        &trans    &trans   &trans   &trans   &trans      &trans
+&none        &kp JP_LT      &kp JP_EQUAL   &kp JP_RT  &none                 &none    &none                        &none          &kp JP_PLUS     &none        &kp JP_SLASH  &mkp MB3
+&none        &kp JP_LPAR    &kp JP_AT      &kp JP_RPAR   &kp MINUS          &none    &none                        &kp JP_QMARK   &kp ENTER  &kp DOUBLE_QUOTES &kp LS(0x87)  &kp LS(0x1e)
+&none        &kp JP_LBRC    &none          &kp JP_RBRC   &none              &none    &none                        &kp DELETE          &none           &none         &none         &none
+
                                           &trans        &trans                                &trans   &trans
       >;
     };
+
+
+  3 {
+      bindings = <
+&kp C_MUTE    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans   &trans   &trans   &bt BT_CLR  &bt BT_CLR_ALL
+&none        &kp HOME   &kp UP     &kp PAGE_UP      &none          &none    &none                        &kp TAB          &kp N7          &kp N8        &kp N9         &mkp MB3
+&none        &kp LEFT   &kp DOWN   &kp RIGHT        &none        &none    &none                          &kp BACKSPACE  &kp N4          &mt RGUI N5        &kp N6         &kp ENTER
+&none        &kp END    &none      &kp PAGE_DOWN    &none        &none    &none                          &kp N0         &kp N1          &kp N2        &kp N3         &mt LCTRL PERIOD
+
+
+                                          &trans        &trans                                &trans   &trans
+      >;
+    };
+
+  4 {
+      bindings = <
+&kp C_MUTE    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans   &trans   &trans   &bt BT_CLR  &bt BT_CLR_ALL
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5        &none    &none           &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&none   &none   &kp JP_AT   &none   &none     &none    &none               &none   &none   &none   &kp JP_HASH   &none
+&trans  &trans  &trans  &trans  &trans         &none    &none                             &trans        &trans        &trans        &trans        &bt BT_CLR
+
+
+                                          &trans        &trans                                &trans   &trans
+      >;
+    };
+
+
+  5 {
+      bindings = <
+&kp C_MUTE    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans   &trans   &trans   &bt BT_CLR  &bt BT_CLR_ALL
+&kp F1  &msc SCRL_RIGHT  &mmv MOVE_Y(-2000)     &msc SCRL_UP  &kp F5        &none    &none                      &kp F6  &kp F7  &mmv MOVE_Y(-300)  &kp F9  &mkp MB1
+
+&none   &mmv MOVE_X(-2000) &mmv MOVE_Y(2000)    &mmv MOVE_X(2000)   &none       &none    &none             &none    &mmv MOVE_X(-300) &mmv MOVE_Y(300)    &mmv MOVE_X(300)   &none
+
+&trans  &msc SCRL_LEFT   &trans           &msc SCRL_DOWN  &trans                 &none    &none                     &trans        &trans        &trans        &trans        &bt BT_CLR
+
+
+
+                                          &trans        &trans                                &trans   &trans
+      >;
+    };
+
 
     extra1 {
       status = "reserved";
