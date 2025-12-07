@@ -17,7 +17,8 @@
     time-to-max-speed-ms = <0>;
     acceleration-exponent = <0>;
     trigger-period-ms = <10>;
-    del
+    delay-ms = <0>;
+};
 
 &mt { 
     flavor = "balanced"; 
