@@ -46,6 +46,14 @@
 
 / {
   behaviors {
+
+td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+        };
+
     boot_unlock: boot_unlock {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
