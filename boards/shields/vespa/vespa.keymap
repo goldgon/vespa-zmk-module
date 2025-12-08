@@ -47,11 +47,11 @@
 / {
   behaviors {
 
-td0: tap_dance_0 {
+tdmup: tap_dance_mouse_up {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+            bindings = <&mmv MOVE_Y(-900)>, <&mmv MOVE_Y(-2000)>;
         };
 
     boot_unlock: boot_unlock {
@@ -154,7 +154,7 @@ td0: tap_dance_0 {
   5 {
       bindings = <
 &kp C_MUTE    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans   &trans   &trans   &bt BT_CLR  &bt BT_CLR_ALL
-&kp F1  &msc SCRL_RIGHT  &mmv MOVE_Y(-2000)     &msc SCRL_UP  &kp F5        &none    &none                      &kp F6  &kp F7  &mmv MOVE_Y(-300)  &kp F9  &mkp MB1
+&kp F1  &msc SCRL_RIGHT  &tdmup     &msc SCRL_UP  &kp F5        &none    &none                      &kp F6  &kp F7  &mmv MOVE_Y(-300)  &kp F9  &mkp MB1
 
 &none   &mmv MOVE_X(-2000) &mmv MOVE_Y(2000)    &mmv MOVE_X(2000)   &none       &none    &none             &none    &mmv MOVE_X(-300) &mmv MOVE_Y(300)    &mmv MOVE_X(300)   &none
 
