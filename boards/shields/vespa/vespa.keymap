@@ -50,28 +50,28 @@
 tdmup: tap_dance_mouse_up {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <80>;
+            tapping-term-ms = <100>;
             bindings = <&mmv MOVE_Y(-900)>, <&mmv MOVE_Y(-2000)>;
         };
 
 tdmdn: tap_dance_mouse_down {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <80>;
+            tapping-term-ms = <100>;
             bindings = <&mmv MOVE_Y(900)>, <&mmv MOVE_Y(2000)>;
         };
 
 tdmlt: tap_dance_mouse_left {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <80>;
+            tapping-term-ms = <100>;
             bindings = <&mmv MOVE_X(-900)>, <&mmv MOVE_X(-2000)>;
         };
 
 tdmrt: tap_dance_mouse_right {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <80>;
+            tapping-term-ms = <100>;
             bindings = <&mmv MOVE_X(900)>, <&mmv MOVE_X(2000)>;
         };
 
