@@ -90,21 +90,6 @@ tdmrt: tap_dance_mouse_right {
 
 
 
- enter {
-            bindings = <&kp ENTER>;
-            key-positions = <32 34>;
-            layers = <0>;
-            timeout-ms = <200>;
-        };
-
-
- space {
-            bindings = <&kp SPACE>;
-            key-positions = <25 27>;
-            layers = <0>;
-            timeout-ms = <200>;
-        };
-
  fopen {
             bindings = <&kp LG(N2)>;
             key-positions = <9 11>;
