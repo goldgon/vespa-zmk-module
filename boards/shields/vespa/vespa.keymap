@@ -88,6 +88,23 @@ tdmrt: tap_dance_mouse_right {
   combos {
     compatible = "zmk,combos";
 
+
+
+ enter {
+            bindings = <&kp ENTER>;
+            key-positions = <32 34>;
+            layers = <0>;
+            timeout-ms = <200>;
+        };
+
+
+ space {
+            bindings = <&kp SPACE>;
+            key-positions = <25 27>;
+            layers = <0>;
+            timeout-ms = <200>;
+        };
+
  fopen {
             bindings = <&kp LG(N2)>;
             key-positions = <9 11>;
@@ -175,9 +192,9 @@ tdmrt: tap_dance_mouse_right {
   5 {
       bindings = <
 &kp C_MUTE    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans   &trans   &trans   &bt BT_CLR  &bt BT_CLR_ALL
-&kp F1  &msc SCRL_RIGHT   &mmv MOVE_Y(-1200)     &msc SCRL_UP  &kp F5        &none    &none                      &kp F6  &kp F7  &mmv MOVE_Y(-300)  &kp F9  &mkp MB1
+&kp F1  &msc SCRL_RIGHT   &mmv MOVE_Y(-1500)     &msc SCRL_UP  &kp F5        &none    &none                      &kp F6  &kp F7  &mmv MOVE_Y(-300)  &kp F9  &mkp MB1
 
-&none      &mmv MOVE_X(1200) &mmv MOVE_Y(1200)    &mmv MOVE_X(1200)    &none       &none    &none             &none    &mmv MOVE_X(-300) &mmv MOVE_Y(300)    &mmv MOVE_X(300)   &none
+&none      &mmv MOVE_X(-1500) &mmv MOVE_Y(1500)    &mmv MOVE_X(1500)    &none       &none    &none             &none    &mmv MOVE_X(-300) &mmv MOVE_Y(300)    &mmv MOVE_X(300)   &none
 
 &trans  &msc SCRL_LEFT   &trans           &msc SCRL_DOWN  &trans                 &none    &none                     &trans        &trans        &trans        &trans        &bt BT_CLR
 
