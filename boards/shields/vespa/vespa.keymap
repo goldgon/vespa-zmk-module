@@ -50,28 +50,28 @@
 tdmup: tap_dance_mouse_up {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <50>;
             bindings = <&mmv MOVE_Y(-900)>, <&mmv MOVE_Y(-2000)>;
         };
 
 tdmdn: tap_dance_mouse_down {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <50>;
             bindings = <&mmv MOVE_Y(900)>, <&mmv MOVE_Y(2000)>;
         };
 
 tdmlt: tap_dance_mouse_left {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <50>;
             bindings = <&mmv MOVE_X(-900)>, <&mmv MOVE_X(-2000)>;
         };
 
 tdmrt: tap_dance_mouse_right {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <50>;
             bindings = <&mmv MOVE_X(900)>, <&mmv MOVE_X(2000)>;
         };
 
@@ -205,9 +205,9 @@ tdmrt: tap_dance_mouse_right {
   7 {
       bindings = <
 &kp C_MUTE    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans   &trans   &trans   &bt BT_CLR  &bt BT_CLR_ALL
-&kp F1  &msc SCRL_RIGHT  &mmv MOVE_Y(-300)     &msc SCRL_UP  &kp F5        &none    &none                      &kp F6  &kp F7  &mmv MOVE_Y(-300)  &kp F9  &mkp MB1
+&kp F1  &msc SCRL_RIGHT  &mmv MOVE_Y(-200)     &msc SCRL_UP  &kp F5        &none    &none                      &kp F6  &kp F7  &mmv MOVE_Y(-300)  &kp F9  &mkp MB1
 
-&none    &mmv MOVE_X(-300) &mmv MOVE_Y(300)    &mmv MOVE_X(300)   &none       &none    &none             &none    &mmv MOVE_X(-300) &mmv MOVE_Y(300)    &mmv MOVE_X(300)   &none
+&none    &mmv MOVE_X(-200) &mmv MOVE_Y(200)    &mmv MOVE_X(200)   &none       &none    &none             &none    &mmv MOVE_X(-300) &mmv MOVE_Y(300)    &mmv MOVE_X(300)   &none
 
 &trans  &msc SCRL_LEFT   &trans           &msc SCRL_DOWN  &trans                 &none    &none                     &trans        &trans        &trans        &trans        &bt BT_CLR
 
