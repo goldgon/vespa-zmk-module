@@ -89,6 +89,12 @@ tdmrt: tap_dance_mouse_right {
     compatible = "zmk,combos";
 
 
+ leflu {
+            bindings = <&kp GRAVE>;
+            key-positions = <13 15>;
+            layers = <0>;
+            timeout-ms = <200>;
+        };
 
  fopen {
             bindings = <&kp LG(N2)>;
