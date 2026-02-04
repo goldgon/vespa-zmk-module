@@ -103,6 +103,13 @@ tdmrt: tap_dance_mouse_right {
             timeout-ms = <200>;
         };
 
+ fopen2 {
+            bindings = <&kp LG(N2)>;
+            key-positions = <19 23>;
+            layers = <0>;
+            timeout-ms = <200>;
+        };
+
        bootloader {
             bindings = <&bootloader>;
             key-positions = <0 11 48 51>;
