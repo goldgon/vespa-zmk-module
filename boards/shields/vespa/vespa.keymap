@@ -152,6 +152,7 @@ tdmrt: tap_dance_mouse_right {
             bindings = <&kp SPACE>;
             key-positions = <24 27>;
             layers = <0>;
+			timeout-ms = <250>;
         };
 
 
