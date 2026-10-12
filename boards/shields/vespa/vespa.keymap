@@ -282,7 +282,7 @@ tdmrt: tap_dance_mouse_right {
 
                                           &trans        &trans                                &trans   &trans
       >;
-    };t
+    };
 
 
 
